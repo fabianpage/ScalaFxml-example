@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <BorderPane fx:id="theBorderStuff" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <bottom>
+        <Text scaleX="5.063912758394589" scaleY="3.5472636815920398" strokeType="OUTSIDE" strokeWidth="0.0" text="Huhu" BorderPane.alignment="BASELINE_CENTER" />
+      </bottom>
+      <center>
+        <Button fx:id="theButton" mnemonicParsing="false" text="Button" />
+      </center>
+      <left>
+        <TextField prefWidth="200.0" text="asdfasdfasdf" />
+      </left>
+      <right>
+        <TextArea prefWidth="200.0" text="lhasdflkasdf&#10;" wrapText="true" />
+      </right>
+      <top>
+        <Label fx:id="theTop" text="Top!" BorderPane.alignment="CENTER" />
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>
