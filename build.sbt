@@ -13,6 +13,8 @@ name := "scalafxml-example"
 
 organization := "com.github.nuriaion"
 
+fork := true
+
 resolvers ++= Seq(
     "Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases",
     "Sonatype Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
@@ -21,7 +23,8 @@ resolvers ++= Seq(
 
 libraryDependencies ++= Seq(
     "com.eed3si9n" %% "treehugger" % "0.2.3",
-    "org.scalaz" %% "scalaz-core" % "7.0.0"
+    "org.scalaz" %% "scalaz-core" % "7.0.0",
+    "org.scalafx" %% "scalafx" % "1.0.0-M3"
 )
 
 libraryDependencies ++= Seq(
@@ -36,6 +39,12 @@ testOptions in Test += Tests.Argument("junitxml", "html", "console", "markup")
 
 publishArtifact in Compile := true
 
-ScalaFxmlPlugin.newSettings
+//ScalaFxmlPlugin.newSettings
 
-newSetting := "light"
+//newSetting := "light"
+
+scalafxmlSettings
+
+//unmanagedJars in Compile += Attributed.blank(file("/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/jfxrt.jar"))
+
+unmanagedJars in Compile += Attributed.blank(file(System.getenv("JAVA_HOME") + "/jre/lib/jfxrt.jar"))
