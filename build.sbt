@@ -24,7 +24,6 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-    "com.eed3si9n" %% "treehugger" % "0.2.3",
     "org.scalaz" %% "scalaz-core" % "7.0.0",
     "org.scalafx" %% "scalafx" % "1.0.0-M3"
 )
