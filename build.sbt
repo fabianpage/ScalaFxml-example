@@ -18,7 +18,9 @@ fork := true
 resolvers ++= Seq(
     "Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases",
     "Sonatype Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
-    "Sonatype Releases" at "http://oss.sonatype.org/content/repositories/releases"
+    "Sonatype Releases" at "http://oss.sonatype.org/content/repositories/releases",
+    "Nuriaion Snapshots" at "http://github.com/Nuriaion/maven-repo/raw/master/snapshots",
+    "Nuriaion Releases" at "http://github.com/Nuriaion/maven-repo/raw/master/releases"
 )
 
 libraryDependencies ++= Seq(
