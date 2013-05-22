@@ -41,12 +41,6 @@ testOptions in Test += Tests.Argument("junitxml", "html", "console", "markup")
 
 publishArtifact in Compile := true
 
-//ScalaFxmlPlugin.newSettings
-
-//newSetting := "light"
-
 scalafxmlSettings
-
-//unmanagedJars in Compile += Attributed.blank(file("/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/jfxrt.jar"))
 
 unmanagedJars in Compile += Attributed.blank(file(System.getenv("JAVA_HOME") + "/jre/lib/jfxrt.jar"))
