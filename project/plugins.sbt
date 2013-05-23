@@ -12,4 +12,4 @@ addSbtPlugin("io.spray" % "sbt-revolver" % "0.6.2")
 
 addSbtPlugin("me.lessis" % "sbt-growl-plugin" % "0.1.3")
 
-addSbtPlugin("com.github.nuriaion" % "scalafxml-sbt" % "0.1.0-SNAPSHOT")
+addSbtPlugin("com.github.nuriaion" % "scalafxml-sbt" % "0.1.1-SNAPSHOT")
